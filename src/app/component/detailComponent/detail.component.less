@@ -1,0 +1,146 @@
+
+@msg-font: 14px;
+@msg-border-color: #fff;
+@itc-font: 16px;
+
+@screen-xs-min: 468px;
+@screen-sm-min: 768px;
+@screen-md-min: 992px;
+@screen-lg-min: 1200px;
+
+.detail {
+   
+}
+
+
+.userImg {
+  display: block;
+
+  @media (max-width: @screen-sm-min) {
+    width: 70px;
+    height: 70px;
+  }
+
+  @media (min-width: @screen-md-min) {
+    width: 120px;
+    height: 120px;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media (min-width: @screen-lg-min) {
+    width: 150px;
+    height: 150px;
+  }
+
+  margin: 0 auto;
+}
+
+.detail-user-msg {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+
+    li {
+        font-size: @msg-font;
+        display: block;
+        float: left;
+        margin: 10px 5px;
+
+        &:after {
+            content: "";
+            padding-left: 10px;
+            border-right:1px solid @msg-border-color;
+            clear:both; 
+        }
+
+        &:nth-last-child(1) {
+            &:after {
+                border-color: rgb(0, 0, 0, 0);
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.msg-list {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.detail-user-itc {
+
+    p {
+        font-size: @itc-font; 
+        word-wrap: break-word;
+        line-height: 200%;
+        letter-spacing: 1px;
+    }
+
+    .itc-brief {
+        text-align: center;
+        
+        &:after {
+            content: "";
+            display: block;
+            margin-top: 5px; 
+            border-bottom: 2px solid #fff;
+        } 
+    }
+}
+
+.detail-user-tab {
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        display: block;
+        float: left;
+        text-align: center;
+         margin-top: 15px;   
+    }
+
+    p{
+        margin-top: 8px; 
+    }
+
+    @media (max-width: @screen-sm-min) {
+        img{
+            width: 40px;
+            height: 40px;
+        }
+
+        li {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: @screen-sm-min) {
+        img{
+            width: 55px;
+            height: 55px;
+        }
+    }
+
+    @media (min-width: @screen-md-min) {
+        img{
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    @media (min-width: @screen-lg-min) {
+        img{
+            width: 85px;
+            height: 85px;
+        }
+    }
+    
+}

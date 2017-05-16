@@ -1,0 +1,109 @@
+.userImg {
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .userImg {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (min-width: 992px) {
+  .userImg {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (min-width: 768px) {
+  .userImg {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media (min-width: 1200px) {
+  .userImg {
+    width: 150px;
+    height: 150px;
+  }
+}
+.detail-user-msg {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+.detail-user-msg li {
+  font-size: 14px;
+  display: block;
+  float: left;
+  margin: 10px 5px;
+}
+.detail-user-msg li:after {
+  content: "";
+  padding-left: 10px;
+  border-right: 1px solid #ffffff;
+  clear: both;
+}
+.detail-user-msg li:nth-last-child(1):after {
+  border-color: #000000;
+  opacity: 0;
+}
+.msg-list {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.detail-user-itc p {
+  font-size: 16px;
+  word-wrap: break-word;
+  line-height: 200%;
+  letter-spacing: 1px;
+}
+.detail-user-itc .itc-brief {
+  text-align: center;
+}
+.detail-user-itc .itc-brief:after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  border-bottom: 2px solid #fff;
+}
+.detail-user-tab ul {
+  padding: 0;
+}
+.detail-user-tab li {
+  display: block;
+  float: left;
+  text-align: center;
+  margin-top: 15px;
+}
+.detail-user-tab p {
+  margin-top: 8px;
+}
+@media (max-width: 768px) {
+  .detail-user-tab img {
+    width: 40px;
+    height: 40px;
+  }
+  .detail-user-tab li {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .detail-user-tab img {
+    width: 55px;
+    height: 55px;
+  }
+}
+@media (min-width: 992px) {
+  .detail-user-tab img {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .detail-user-tab img {
+    width: 85px;
+    height: 85px;
+  }
+}

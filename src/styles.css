@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 90px;/*防止顶部遮盖主体部分*/
+  font-size: 14px;
+  background-color: #87b0a5;
+  font-family: NotoSansHans-Light;
+}
+
+@font-face
+{
+font-family: NotoSansHans-Light;
+src: url('./assets/fonts/NotoSansHans-Light.otf');
+}
+
+.navbar-default {
+    text-align: center;
+}

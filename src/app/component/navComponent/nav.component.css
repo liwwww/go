@@ -1,0 +1,5 @@
+@media(min-width: 690px) {
+    .nav {
+        float: right !important;
+    }
+}
