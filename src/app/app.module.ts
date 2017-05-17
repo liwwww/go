@@ -11,6 +11,8 @@ import { listComponent } from './component/listComponent/list.component';
 import { homeComponent } from './component/homeComponent/home.component';
 import { detailComponent } from './component/detailComponent/detail.component';
 import { navComponent } from './component/navComponent/nav.component';
+import { ProjectComponent } from './component/projectComponent/project.component';
+import { SkillComponent } from './component/skillComponent/skill.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { navComponent } from './component/navComponent/nav.component';
     listComponent,
     homeComponent,
     detailComponent,
-    navComponent
+    navComponent,
+    ProjectComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,

@@ -73,7 +73,7 @@ export class homeComponent implements OnInit {
 
     selectedHero: Hero;
 
-    constructor(private inputservice:inputService){}
+    constructor(private inputservice:inputService){};
 
     getHeroes():void{
       this.heroes = this.inputservice.getHeroes();
