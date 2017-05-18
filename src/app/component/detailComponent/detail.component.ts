@@ -4,27 +4,19 @@ import { Detial } from '../../shared/detail/detail.model';
 import { Detials } from '../../shared/detail/detail.mork';
 import { detailService } from '../../shared/detail/detail.service';
 
+import { fadeIn } from '../../animation/routerAnimation';
+
 @Component({
     moduleId: module.id,
     selector: 'detail',
     templateUrl: './detail.component.html',
     styleUrls: ['./detail.component.css'],
     providers: [detailService],
+    animations: [fadeIn],
     host: {
-     '[@routeAnimation]': 'true',
-     '[style.display]': "'block'",
-     '[style.position]': "'absolute'"
-   },
-  animations: [
-    trigger('routeAnimation', [
-      state('*', style({transform: 'translateY(0)', opacity: 1})),
-      transition('void => *', [
-        style({transform: 'translateY(100%)', opacity: 0}),
-        animate(1000)
-      ]),
-      transition('* => void', animate(1000, style({transform: 'translateY(100%)', opacity: 0})))
-    ])
-  ]
+        '[@openClose]': 'true',
+        'style': 'display: block;'
+    }
 })
 export class detailComponent implements OnInit {
 

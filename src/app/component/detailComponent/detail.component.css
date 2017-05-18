@@ -40,7 +40,7 @@
 .detail-user-msg li:after {
   content: "";
   padding-left: 10px;
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid #a2a2a2;
   clear: both;
 }
 .detail-user-msg li:nth-last-child(1):after {
@@ -65,7 +65,7 @@
   content: "";
   display: block;
   margin-top: 5px;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #87b0a5;
 }
 .detail-user-tab ul {
   padding: 0;

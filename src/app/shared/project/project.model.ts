@@ -5,4 +5,5 @@ export class Project {
     duties:String;
     jobName:String;
     content:String;
+    target:String;
 }

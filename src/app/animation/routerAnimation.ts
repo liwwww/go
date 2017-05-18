@@ -8,12 +8,14 @@ import {
 } from '@angular/animations';
 
 
-export const fadeIn = trigger('flyIn', [
-  state('*', style({transform:'translateX(0)'})),
-  transition('void => *', [
-    animate(100, style({transform: 'translateX(-15px)'}))
-  ]),
-  transition('* => void', [
-    animate(100, style({transform: 'translateX(15px)'}))
-  ])
-]);
+export const fadeIn = trigger(
+    'openClose',
+    [
+      transition('void => *', [
+        style({ opacity: 0 }),
+        animate('1000ms', style({ opacity: 1 }))
+      ]),
+      transition('* => void', [
+        style({ opacity: 0 })
+      ])
+    ]);

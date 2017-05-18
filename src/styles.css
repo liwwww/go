@@ -4,8 +4,9 @@ body {
   padding: 0;
   padding-top: 90px;/*防止顶部遮盖主体部分*/
   font-size: 14px;
-  background-color: #87b0a5;
+  background-color: #fff;
   font-family: NotoSansHans-Light;
+  overflow: none;
 }
 
 @font-face
@@ -16,4 +17,18 @@ src: url('./assets/fonts/NotoSansHans-Light.otf');
 
 .navbar-default {
     text-align: center;
+}
+
+.app-load {
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  display: block;
+  background-image: url('assets/icon/load.gif');
+  width: 50px;
+  height: 50px;
 }

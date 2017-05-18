@@ -1,4 +1,8 @@
 
+@control:#333;
+@icon:#777;
+@quote:#f2dede;
+
 .project {
     position: relative;
     box-sizing: border-box;
@@ -8,6 +12,7 @@
         margin: 0 -45px;
         top: 50%;
         background-image: linear-gradient(to right, rgba(0,0,0,0) 0, rgba(0,0,0,0) 100%) !important;
+        color: @control ;
     
 }
 
@@ -24,16 +29,15 @@
     border-radius: 5px;
     text-align: center;
     
-  
-    
     h5 {
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #999;
         padding: 8px 0;  
     }
 
     blockquote {
         margin: 10px;
-        text-align: inherit; 
+        text-align: inherit;
+        border-left-color: @quote;  
     }
 
     .media-heading {
@@ -44,8 +48,10 @@
 
 .media-icon {
     bottom: -50px;
+    
     li {
-        margin-right: 20px;
+        margin-right: 16px;
+        background-color: @icon;
     }
 }
 

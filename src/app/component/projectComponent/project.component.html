@@ -10,7 +10,7 @@
             <h4 class="media-heading">{{ project.name }}</h4>
             <cite>{{ project.time }}</cite>
             <h5>{{ project.duties }}</h5>
-            <h2>{{ project.jobName }}</h2>
+            <h2>{{ project.jobName }} <a *ngIf="project.target !=''" [ngClass]="{'glyphicon glyphicon-link':project.target != ''}"></a></h2>
             <blockquote><p>{{ project.content }}</p></blockquote>
         </div>
         </div>

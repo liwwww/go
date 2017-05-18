@@ -5,13 +5,18 @@ import { Skill } from '../../shared/skill/skill.model';
 import { Skills } from '../../shared/skill/skill.mork';
 import { SkillService } from '../../shared/skill/skill.service';
 
-
+import { fadeIn } from '../../animation/routerAnimation';
 @Component({
     moduleId: module.id,
     selector: 'SkillComponent',
     templateUrl: './skill.component.html',
     styleUrls: ['./skill.component.css'],
-    providers: [SkillService]
+    providers: [SkillService],
+    animations: [fadeIn],
+    host: {
+        '[@openClose]': 'true',
+        'style': 'display: block;'
+    }
 })
 
 export class SkillComponent implements OnInit {
