@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, trigger, state, style, animate, transition } from '@angular/core';
 
 import { Detial } from '../../shared/detail/detail.model';
 import { Detials } from '../../shared/detail/detail.mork';
@@ -9,7 +9,22 @@ import { detailService } from '../../shared/detail/detail.service';
     selector: 'detail',
     templateUrl: './detail.component.html',
     styleUrls: ['./detail.component.css'],
-    providers: [detailService]
+    providers: [detailService],
+    host: {
+     '[@routeAnimation]': 'true',
+     '[style.display]': "'block'",
+     '[style.position]': "'absolute'"
+   },
+  animations: [
+    trigger('routeAnimation', [
+      state('*', style({transform: 'translateY(0)', opacity: 1})),
+      transition('void => *', [
+        style({transform: 'translateY(100%)', opacity: 0}),
+        animate(1000)
+      ]),
+      transition('* => void', animate(1000, style({transform: 'translateY(100%)', opacity: 0})))
+    ])
+  ]
 })
 export class detailComponent implements OnInit {
 

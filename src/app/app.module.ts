@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 
 import { appRoutingModule } from './routing/app.route';
 
@@ -13,6 +15,7 @@ import { detailComponent } from './component/detailComponent/detail.component';
 import { navComponent } from './component/navComponent/nav.component';
 import { ProjectComponent } from './component/projectComponent/project.component';
 import { SkillComponent } from './component/skillComponent/skill.component';
+
 
 
 @NgModule({
@@ -30,7 +33,9 @@ import { SkillComponent } from './component/skillComponent/skill.component';
     BrowserModule,
     FormsModule,
     appRoutingModule,
-    HttpModule
+    HttpModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

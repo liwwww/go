@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,trigger,state,style,transition,animate,keyframes } from '@angular/core';
 
 @Component({
     moduleId: module.id,
@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: './nav.component.html',
     styleUrls: ['./nav.component.css']
 })
+
 export class navComponent implements OnInit {
     constructor() { }
 
     ngOnInit() { }
 }
+
