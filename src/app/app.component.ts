@@ -27,6 +27,7 @@ private isInfinitiveScrollLoaderEnabled: boolean;
     private activatedRoute: ActivatedRoute
   ) {
     this.isInfinitiveScrollLoaderEnabled = false;
+    
   }
 
 routers:Array<String> = ["/detail","/project","/skill","/call"]; 
@@ -34,7 +35,7 @@ routers:Array<String> = ["/detail","/project","/skill","/call"];
   ngOnInit() {
 
     this.router.navigate(['/detail']);
-    console.log(this.router.url);
+    
     window.onscroll = (event) => {
       if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
         

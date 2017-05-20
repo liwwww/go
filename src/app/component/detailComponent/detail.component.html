@@ -1,7 +1,7 @@
 <div class="detail col-md-8 col-md-offset-2 "  *ngFor="let detail of detials">
 
     <div class="detail-user-img col-md-4 col-md-offset-4">
-        <img src="http://wlgxh.oss-cn-shenzhen.aliyuncs.com/images/1492679563311.jpg" class="img-circle userImg" />
+        <img src="http://wlgxh.oss-cn-shenzhen.aliyuncs.com/images/1492679563311.jpg" class="img-circle userImg"/>
     </div><!-- detail-user-img -->
 
     <div class="detail-user-msg col-md-12">
@@ -12,9 +12,9 @@
         </ul>    
     </div><!-- detail-user-msg -->
 
-    <div class="detail-user-itc col-md-12">
+    <div class="detail-user-itc col-md-12" >
         <p class="itc-brief">{{detail.brief}}</p>
-        <p class="itc-content">{{detail.content}}</p>    
+        <p class="itc-content"[@openText]="ture">{{detail.content}}</p>    
     </div><!-- detail-user-itc -->
 
     <div class="detail-user-tab">

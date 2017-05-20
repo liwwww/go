@@ -19,3 +19,12 @@ export const fadeIn = trigger(
         style({ opacity: 0 })
       ])
     ]);
+
+export const TextfadeIn = trigger(
+    'openText',
+    [
+      transition('void => *', [
+        style({ "transform":"rotateX(150deg)","opacity":0 }),
+        animate('1500ms', style({ "transform":"none","opacity":"1" }))
+      ])
+    ]);
