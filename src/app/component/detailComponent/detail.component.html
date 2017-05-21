@@ -13,26 +13,26 @@
     </div><!-- detail-user-msg -->
 
     <div class="detail-user-itc col-md-12" >
-        <p class="itc-brief">{{detail.brief}}</p>
-        <p class="itc-content"[@openText]="ture">{{detail.content}}</p>    
+        <p class="itc-brief" [@openText]="ture">{{detail.brief}}</p>
+        <p class="itc-content">{{detail.content}}</p>    
     </div><!-- detail-user-itc -->
 
     <div class="detail-user-tab">
-        <ul>
-            <li class="col-md-3 col-lg-3 col-sm-3">
-                <img src="http://wlgxh.oss-cn-shenzhen.aliyuncs.com/images/1492679563311.jpg" class="img-circle userImg" />
+        <ul [@openImg]="ture">
+            <li class="detail-user-state col-md-3 col-lg-3 col-sm-3">
+                <img src="../../../assets/icon/state.png" class="img-circle userImg" />
                 <p>{{detail.stage[0]}}</p>
             </li>
-            <li class="col-md-3 col-lg-3 col-sm-3">
-                <img src="http://wlgxh.oss-cn-shenzhen.aliyuncs.com/images/1492679563311.jpg" class="img-circle userImg" />
+            <li class="detail-user-state col-md-3 col-lg-3 col-sm-3">
+                <img src="../../../assets/icon/education.png" class="img-circle userImg" />
                 <p>{{detail.stage[1]}}</p>
             </li> 
-             <li class="col-md-3 col-lg-3 col-sm-3">
-                <img src="http://wlgxh.oss-cn-shenzhen.aliyuncs.com/images/1492679563311.jpg" class="img-circle userImg" />
+             <li class="detail-user-state col-md-3 col-lg-3 col-sm-3">
+                <img src="../../../assets/icon/experience.png" class="img-circle userImg" />
                 <p>{{detail.stage[2]}}</p>
             </li>
-            <li class="col-md-3 col-lg-3 col-sm-3">
-                <img src="http://wlgxh.oss-cn-shenzhen.aliyuncs.com/images/1492679563311.jpg" class="img-circle userImg" />
+            <li class="detail-user-state col-md-3 col-lg-3 col-sm-3">
+                <img src="../../../assets/icon/city.png" class="img-circle userImg" />
                 <p>{{detail.stage[3]}}</p>
             </li>
         </ul>    

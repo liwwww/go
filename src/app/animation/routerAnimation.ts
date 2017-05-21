@@ -24,7 +24,16 @@ export const TextfadeIn = trigger(
     'openText',
     [
       transition('void => *', [
-        style({ "transform":"rotateX(150deg)","opacity":0 }),
+        style({ "transform":"rotateY(135deg)","opacity":0 }),
         animate('1500ms', style({ "transform":"none","opacity":"1" }))
+      ])
+    ]);
+
+export const ImgfadeIn = trigger(
+    'openImg',
+    [
+      transition('void => *', [
+        style({ "opacity":0 }),
+        animate('3000ms', style({ "opacity":"1" }))
       ])
     ]);

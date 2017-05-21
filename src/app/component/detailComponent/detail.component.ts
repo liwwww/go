@@ -4,7 +4,7 @@ import { Detial } from '../../shared/detail/detail.model';
 import { Detials } from '../../shared/detail/detail.mork';
 import { detailService } from '../../shared/detail/detail.service';
 
-import { fadeIn,TextfadeIn } from '../../animation/routerAnimation';
+import { fadeIn,TextfadeIn,ImgfadeIn } from '../../animation/routerAnimation';
 
 @Component({
     moduleId: module.id,
@@ -12,7 +12,7 @@ import { fadeIn,TextfadeIn } from '../../animation/routerAnimation';
     templateUrl: './detail.component.html',
     styleUrls: ['./detail.component.css'],
     providers: [detailService],
-    animations: [fadeIn,TextfadeIn],
+    animations: [fadeIn,TextfadeIn,ImgfadeIn],
     host: {
         '[@openClose]': 'true',
         'style': 'display: block;'
