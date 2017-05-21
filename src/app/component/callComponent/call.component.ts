@@ -16,10 +16,9 @@ import { fadeIn } from '../../animation/routerAnimation';
 })
 export class CallComponent implements OnInit {
     constructor() { }
-currentPosition='left';
     ngOnInit() {
         
-     }
+    }
 
 
 }
