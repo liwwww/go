@@ -1,28 +1,26 @@
-# MyApp
+# 基于Angular-cli构建的个人简历
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+这个项目是基于Angular-cli构建的，可以作为AngularJs起步的项目，在线预览请移步(http://www.wlgxh.cn:8087)
 
-## Development server
+## 项目所用到的技术
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1、通过Angular-cli进行项目框架搭建；/<br>
+2、通过Angular-router，Angular-animation进行路由切换及切换的动画效果实现；/<br>
+3、通过Git进行项目迭代更新。/<br>
+4、通过webpack和npm进行项目打包和项目包管理。/<br>
 
-## Code scaffolding
+## 项目部署
+首先需要安装cnpm淘宝镜像，能翻墙直接跳到下一步/<br>
+$ npm install -g cnpm --registry=https://registry.npm.taobao.org  /<br> 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+项目需要安装Angular-cli /<br>
+$ cnpm install -g @angular/cli
+已经安装Angular1-cli的请先卸载原来的老版本再安装模块/<br>
 
-## Build
+安装好Angular-cli后就可以使用Angualr-cli的指令了/<br>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+$ ng serve
 
-## Running unit tests
+## 项目打包
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+$ ng build
