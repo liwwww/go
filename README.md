@@ -10,6 +10,8 @@
 4、通过webpack和npm进行项目打包和项目包管理。
 
 ## 项目部署
+下载后如果项目文件夹名字与package.json里的name不一致的话，自行修改。
+
 首先需要安装cnpm淘宝镜像，能翻墙直接跳到下一步
 
 $ npm install -g cnpm --registry=https://registry.npm.taobao.org  
